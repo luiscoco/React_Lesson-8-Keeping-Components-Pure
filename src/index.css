@@ -1,0 +1,118 @@
+:root {
+  --bg: #0b1220;
+  --panel: #101828;
+  --card: #111a2f;
+  --text: #e6edf3;
+  --muted: #9fb0c3;
+  --good: #1dd1a1;
+  --bad: #ff6b6b;
+  --accent: #6ea8fe;
+  --border: #21304a;
+}
+
+* { box-sizing: border-box; }
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(1200px 600px at 10% 0%, #151f34, #0b1220);
+  color: var(--text);
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+.page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 20px 80px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.sub {
+  color: var(--muted);
+  margin: 0;
+}
+
+.section {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.05));
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 16px 16px 20px;
+  margin: 18px 0 22px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 12px 14px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.stack {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 6px 0 12px;
+}
+
+label {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+input[type="number"] {
+  color: var(--text);
+  background: #0f172a;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 8px 10px;
+  outline: none;
+  width: 140px;
+}
+
+.btn {
+  background: var(--accent);
+  color: #0b1220;
+  border: 0;
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.btn:hover { filter: brightness(1.05); }
+
+.pure { color: var(--good); font-weight: 600; }
+.impure { color: var(--bad); font-weight: 600; }
+
+.good { color: var(--good); margin: 8px 0 12px; }
+.bad { color: var(--bad); margin: 8px 0 12px; }
+
+.muted { color: var(--muted); }
+
+.footer {
+  margin-top: 32px;
+  padding-top: 18px;
+  border-top: 1px dashed var(--border);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
