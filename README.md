@@ -9,6 +9,10 @@ This Vite + React app demonstrates purity concepts by contrasting predictable re
 - Side effects moved to event handlers and `useEffect`.
 - Controlled input to explore how prop changes affect output.
 
+<img width="1253" height="844" alt="image" src="https://github.com/user-attachments/assets/f4f332ea-e4bd-41ff-b93e-ff8c209daad6" />
+
+<img width="961" height="466" alt="image" src="https://github.com/user-attachments/assets/3330c8c3-9dbb-436d-901b-a29bc75d8aab" />
+
 ## Code snippets
 
 Pure component with derived data:
