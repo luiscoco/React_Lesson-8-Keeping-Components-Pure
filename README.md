@@ -2,7 +2,7 @@
 
 This Vite + React app demonstrates purity concepts by contrasting predictable render output with impure side effects, safe local mutation, and post-render effects.
 
-## Features
+## 1. Features
 - Pure rendering with deterministic JSX output based on props.
 - Impure rendering example that mutates external state on each render.
 - Safe local mutation inside a render for building temporary UI arrays.
@@ -13,9 +13,9 @@ This Vite + React app demonstrates purity concepts by contrasting predictable re
 
 <img width="961" height="466" alt="image" src="https://github.com/user-attachments/assets/3330c8c3-9dbb-436d-901b-a29bc75d8aab" />
 
-## Code snippets
+## 2. Code snippets
 
-Pure component with derived data:
+### 2.1. Pure component with derived data:
 ```jsx
 function Recipe({ drinkers }) {
   const milkCups = useMemo(() => 0.5 * drinkers, [drinkers]);
@@ -29,7 +29,7 @@ function Recipe({ drinkers }) {
 }
 ```
 
-Impure render (mutates outside state) vs pure render (props only):
+### 2.2. Impure render (mutates outside state) vs pure render (props only):
 ```jsx
 let impureGuestCounter = 0;
 function ImpureCup() {
@@ -66,14 +66,14 @@ function ButtonWithEffect() {
 }
 ```
 
-## How to run
+## 3. How to run
 ```bash
 npm install
 npm run dev
 ```
 Then open the local URL printed in the terminal.
 
-## File overview
+## 4. File overview
 - `index.html`: Single HTML entry point with the `#root` element.
 - `package.json`: Project metadata, scripts, and React/Vite dependencies.
 - `vite.config.js`: Vite configuration with the React plugin.
