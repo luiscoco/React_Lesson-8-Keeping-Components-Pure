@@ -1,4 +1,4 @@
-# Tea Party Planner — React 19 + Vite
+# React 19.2 - Lesson 8 - Keeping Components Pure
 
 Demonstrates React purity concepts from Lesson 8:
 - Pure components and predictable rendering
