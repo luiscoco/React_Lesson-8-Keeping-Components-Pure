@@ -42,7 +42,7 @@ function Cup({ guest }) {
 }
 ```
 
-Side effects in handlers / `useEffect`:
+### 2.3. Side effects in handlers / `useEffect`:
 ```jsx
 function ButtonWithEffect() {
   const [clicked, setClicked] = useState(false);
